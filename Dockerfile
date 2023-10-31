@@ -66,7 +66,8 @@ RUN update-ca-certificates && \
     test ! -f libcudnn.so && \
     ln -s libcudnn.so.8.5.0 libcudnn.so && \
     test ! -f libcublas.so && \
-    ln -s /usr/local/cuda-11.7/targets/x86_64-linux/lib/libcublas.so.11.10.3.66 libcublas.so
+    ln -s /usr/local/cuda-11.7/targets/x86_64-linux/lib/libcublas.so.11.10.3.66 libcublas.so \
+    ln -s /usr/local/cuda-11.8/targets/x86_64-linux/include/cuda_profiler_api.h cuda_profiler_api.h /usr/local/cuda-11.7/targets/x86_64-linux/include/cuda_profiler_api.h cuda_profiler_api.h
 
 # COPY . /app/
 COPY --from=builder /app/venv /app/venv
