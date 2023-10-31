@@ -49,6 +49,7 @@ entrypoints
 executing
 facexlib
 fastai
+fastapi[full]
 fastjsonschema
 fastprogress
 ffmpeg-python
@@ -172,3 +173,4 @@ zc.recipe.egg
 zc.wsgirunner
 zc.zdaemonrecipe
 zipp
+xonsh[full]
