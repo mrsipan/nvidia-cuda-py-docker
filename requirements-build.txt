@@ -49,7 +49,7 @@ entrypoints
 executing
 facexlib
 fastai
-fastapi[full]
+fastapi[all]
 fastjsonschema
 fastprogress
 ffmpeg-python
